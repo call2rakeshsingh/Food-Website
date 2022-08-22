@@ -1,0 +1,705 @@
+/*CSS Reset*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --hoverbg: rgb(255, 255, 255);
+    --bodybg: rgb(255, 208, 0);
+    --headingsize: 18px;
+    --headingshadow: 1px 1px 2px rgb(161, 141, 141);
+    --socialiconh: 30px;
+    --socialiconw: 30px;
+    --boxshadow: 2px 5px 10px rgb(128, 127, 127);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dropbtn {
+    display: none;
+}
+
+
+/*Navigation Bar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 45px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: -30px;
+
+}
+
+.navbar ul .list {
+    display: flex;
+    margin: 1px 5px;
+    list-style: none;
+}
+
+.navbar ul .list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 5px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.navbar ul .list a:hover {
+    background-color: var(--hoverbg);
+    color: black;
+}
+
+
+/*Section 1 Description*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 260px;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url('../img/Description.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 305px;
+    z-index: -1;
+    opacity: .3;
+}
+
+.description h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 70px;
+    /* border: 2px solid red; */
+
+}
+
+
+
+
+#dispara11 {
+    margin-top: -20px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+#dispara12 {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#para2 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -11px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 12px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: rgb(215, 0, 0);
+    color: white;
+    transition: all .3s;
+
+}
+
+.btn:active {
+    background-color: rgb(143, 29, 0);
+    color: white;
+    transition: all .3s;
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* Services */
+
+
+.services {
+    position: absolute;
+    top: 305px;
+    height: 90px;
+    width: 100%;
+    background-color: var(--bodybg);
+    font-size: var(--headingsize);
+    text-shadow: var(--headingshadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicescontainer {
+    display: flex;
+    position: absolute;
+    top: 395px;
+    height: 430px;
+    width: 100%;
+    background-color: var(--bodybg);
+    justify-content: center;
+    align-items: center;
+}
+
+.servisesmain {
+    display: flex;
+    height: 430px;
+    width: 88%;
+    background-color: var(--bodybg);
+    align-items: center;
+}
+
+
+.servicescontainer .item {
+    display: flex;
+    height: 350px;
+    width: 30%;
+    background-color: rgb(238, 233, 233);
+    border: black;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: var(--boxshadow);
+    box-sizing: border-box;
+}
+
+.servicescontainer .item p {
+    padding: 25px;
+}
+
+.servicescontainer #catering {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.servicescontainer .item:hover {
+    background-color: var(--hoverbg);
+}
+
+.servicescontainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.servicescontainer a:hover {
+
+    color: rgb(86, 1, 1);
+    font-size: 23px;
+
+}
+
+.servicescontainer a:active {
+
+    color: rgb(165, 0, 0);
+    font-size: 23px;
+
+}
+
+
+.servicescontainer .photos:hover {
+
+    opacity: .8;
+
+}
+
+.photo1 {
+    display: block;
+    height: 81px;
+    width: 180px;
+    position: relative;
+}
+
+/* .photo1::before
+{
+    content: "";
+    background: url('../img/pizza.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+
+.photo2 {
+    display: block;
+    height: 86px;
+    width: 172px;
+    position: relative;
+    margin: 0px;
+}
+
+
+/* .photo2::before
+{
+    content: "";
+    background: url('../img/catering.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+
+.photo3 {
+
+    display: block;
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+/* .photo3::before
+{
+    content: "";
+    background: url('../img/delivery.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/* About Us */
+
+
+.aboutus {
+    position: absolute;
+    top: 825px;
+    height: 90px;
+    width: 100%;
+    background-color: var(--bodybg);
+    font-size: var(--headingsize);
+    text-shadow: var(--headingshadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutusdescription {
+    box-sizing: border-box;
+    position: absolute;
+    top: 915px;
+    height: 365px;
+    width: 100%;
+    background-color: var(--bodybg);
+    display: flex;
+    justify-content: center;
+}
+
+#aboutpara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 88%;
+    padding: 0px 30px;
+    font-size: 18px;
+    background-color: rgb(238, 233, 233);
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: var(--boxshadow);
+    margin-top: 20px;
+}
+
+#aboutpara:hover {
+    background-color: var(--hoverbg);
+}
+
+/* Our Clients Container */
+
+
+.ourclients {
+    position: absolute;
+    top: 1280px;
+    height: 90px;
+    width: 100%;
+    background-color: var(--bodybg);
+    font-size: var(--headingsize);
+    text-shadow: var(--headingshadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourclientbox {
+
+    position: absolute;
+    top: 1370px;
+    height: 320px;
+    width: 100%;
+    background-color: var(--bodybg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.ourclientscontainer {
+
+    position: absolute;
+    top: 10px;
+    height: 200px;
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 120px;
+    border-radius: 30px;
+    background-color: rgb(238, 233, 233);
+    box-sizing: border-box;
+    box-shadow: var(--boxshadow);
+    margin-top: 10px;
+}
+
+.ourclientscontainer:hover {
+    background-color: var(--hoverbg);
+}
+
+
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 20px 3%;
+}
+
+.ourclientscontainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 15.5px;
+}
+
+.ourclientscontainer a:hover {
+
+    color: rgb(86, 1, 1);
+    font-size: 15px;
+
+}
+
+
+.ourclientscontainer .clientsall:hover {
+
+    opacity: .8;
+
+}
+
+
+
+.clients1 {
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+/* .clients1::before
+{
+    content: "";
+    background: url('../img/dell.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+
+} */
+
+
+.clients2 {
+    height: 70px;
+    width: 56px;
+    position: relative;
+    display: block;
+}
+
+/* .clients2::before
+{
+    content: "";
+    background: url('../img/apple.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+.clients3 {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    display: block;
+}
+
+/* .clients3::before
+{
+    content: "";
+    background: url('../img/hp.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+.clients4 {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    display: block;
+}
+
+/* .clients4::before
+{
+    content: "";
+    background: url('../img/microsoft.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+.clients5 {
+
+    height: 67px;
+    width: 78px;
+    position: relative;
+    display: block;
+    margin: 0px 0px;
+}
+
+/* .clients5::before
+{
+    content: "";
+    background: url('../img/tata.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;  
+
+} */
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+/* Contact Us */
+
+
+
+
+.contactus {
+    position: absolute;
+    top: 1690px;
+    height: 55px;
+    width: 100%;
+    background-color: var(--bodybg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 5;
+    font-size: 14px;
+}
+
+.contactus::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    height: 55px;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+.contactuscontainer {
+    position: absolute;
+    top: 1745px;
+    height: 220px;
+    width: 100%;
+    background-color: var(--bodybg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    font-size: 15px;
+}
+
+
+.contactuscontainer::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(225, 224, 224);
+    height: 220px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+.contactuscontainer #para1 {
+    font-size: 19px;
+    margin: -10px 0px 0px 0px;
+}
+
+.contactuscontainer #para2 {
+    font-size: 19px;
+    margin: 7px 0px 0px 0px;
+}
+
+.contactuscontainer h3 {
+    margin-top: 25px;
+}
+
+
+.contactuscontainer #fb {
+    height: var(--socialiconh);
+    width: var(--socialiconw);
+    position: relative;
+    display: inline-block;
+}
+
+
+.contactuscontainer #fb::before {
+    content: "";
+    background: url('../img/fb.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.contactuscontainer #instagram {
+    height: var(--socialiconh);
+    width: var(--socialiconw);
+    position: relative;
+    display: inline-block;
+}
+
+
+.contactuscontainer #instagram::before {
+    content: "";
+    background: url('../img/insta.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.contactuscontainer #twitter {
+    height: var(--socialiconh);
+    width: var(--socialiconw);
+    position: relative;
+    display: inline-block;
+}
+
+
+.contactuscontainer #twitter::before {
+    content: "";
+    background: url('../img/twitter.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.contactuscontainer #youtube {
+    height: var(--socialiconh);
+    width: var(--socialiconw);
+    position: relative;
+    display: inline-block;
+}
+
+
+.contactuscontainer #youtube::before {
+    content: "";
+    background: url('../img/youtube.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+.contactuscontainer .anchortag a {
+    margin: -10px 5px 0px 5px;
+}
+
+.contactuscontainer .anchortag a:hover {
+    opacity: .8;
+    height: 50px;
+    width: 50px;
+}
